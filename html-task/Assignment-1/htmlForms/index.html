@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML FORMS</title>
+  </head>
+  <body>
+    <header>
+      <h3>HTML Learning</h3>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/aboutus">AboutUs</a>
+        <a href="/support">Support</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <hr />
+    <section>
+      <h1>HTML FORMS</h1>
+      <h3>Personal Details</h3>
+    </section>
+    <form>
+      <table>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td><input type="text" name="username" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="location">Location</label></td>
+          <td><input type="text" name="location" required /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>
+            <input type="radio" name="gender" id="male" />Male
+            <input type="radio" name="gender" id="female" />Female
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="birthday">Birthday</label></td>
+          <td>
+            <input type="date" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="country">Country</label></td>
+          <td>
+            <select name="countries">
+              <option value="" disabled selected>Select a country</option>
+              <option value="nepal">Nepal</option>
+              <option value="india">India</option>
+              <option value="china">China</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="otherinfo">Other Information</label></td>
+          <td>
+            <textarea
+              style="resize: none"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              required
+            >
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="newsletter" required /></td>
+          <td>
+            <label for="newsletter">I want to receive the newsletter</label>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="submit" style="padding: 5px">Submit</button></td>
+        </tr>
+      </table>
+    </form>
+    <hr />
+    <footer>
+      <p>&#169; Copyright. End of my first project</p>
+    </footer>
+  </body>
+</html>

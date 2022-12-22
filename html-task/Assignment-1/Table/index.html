@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      body {
+        margin: 30px 50px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-radius: 2px;
+      }
+      th,
+      td {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>HTML Learning</h3>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/aboutus">AboutUs</a>
+        <a href="/support">Support</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <hr />
+    <header>
+      <h1 style="font-size: 36px">Playing HTML Table</h1>
+    </header>
+    <hr />
+    <section style="margin-bottom: 20px">
+      <table style="width: 70%">
+        <tr>
+          <th colspan="3">Grocery Items Bill</th>
+        </tr>
+        <tr>
+          <th>ItemName</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Potatoes</td>
+          <td>50</td>
+          <td>NRS. 500.00</td>
+        </tr>
+        <tr>
+          <td>Nuts</td>
+          <td>50</td>
+          <td>NRS. 1400.00</td>
+        </tr>
+        <tr>
+          <td>Onions</td>
+          <td>50</td>
+          <td>NRS. 2500.00</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="font-weight: bold">Total Price:</td>
+          <td style="font-weight: bold">NRS. 3400.00</td>
+        </tr>
+      </table>
+    </section>
+    <table style="width: 70%">
+      <tr>
+        <th colspan="3">Seminar</th>
+      </tr>
+      <tr>
+        <th>Day</th>
+        <th colspan="2">Schedule</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Monday</td>
+        <td>7:00AM</td>
+        <td>11:00AM</td>
+      </tr>
+      <tr>
+        <td>4:00PM</td>
+        <td>8:00PM</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Tuesday</td>
+        <td>6:00AM</td>
+        <td>10:00AM</td>
+      </tr>
+      <tr>
+        <td>3:00AM</td>
+        <td>11:00AM</td>
+      </tr>
+    </table>
+
+    <hr />
+    <footer>
+      <p>&#169; Copyright. End of my first project</p>
+    </footer>
+  </body>
+</html>

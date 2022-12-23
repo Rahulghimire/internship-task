@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+    <style>
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        margin: auto;
+        animation: 3s alternate infinite;
+        animation-name: example;
+        animation-timing-function: ease-in;
+      }
+      @keyframes example {
+        0% {
+          background-color: blue;
+        }
+        25% {
+          background-color: blue;
+          transform: scale(0.8) rotate(0deg);
+          border-radius: 40%;
+        }
+        50% {
+          background-color: blue;
+          transform: scale(0.6) rotate(0deg);
+          border-radius: 60%;
+        }
+        100% {
+          background-color: rgb(111, 111, 171);
+          border-radius: 100%;
+          transform: rotate(60deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

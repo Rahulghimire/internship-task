@@ -6,36 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
     <style>
-      body {
-        margin: 20px;
+      section {
+        padding: 20px;
+        margin: 40px;
       }
-      /* .flex-container{
-            display:flex;
-            align-items: center;
-        } */
+      .flex-container,
+      .flex-container-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 60%;
+        margin-top: 20px;
+      }
+      .flex-content,
+      .flex-content-1 {
+        padding: 20px;
+        flex-basis: 40%;
+      }
+      img {
+        max-width: 100%;
+      }
+      @media (max-width: 428px) {
+        .flex-container,
+        .flex-container-1 {
+          flex-direction: column;
+          width: 100%;
+        }
+        section {
+          margin: 0px;
+          padding: 0px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class=flex-container>
-      <div>
-        <img src="https://media.istockphoto.com/id/1413625386/photo/survival-set-of-nonperishable-foods-in-carton-box.jpg?s=612x612&w=is&k=20&c=HVYdVtEsm0DZxY93xdkuIHk68fBtxcLKQtu85qpR5mc="alt="photo">
-      </div>
-      <div>
-        <div>
-          <h1>This is a header</h1>
-        </div>
-       <div> <p>This is a paragraph</p></div>
-      </div>
-      
+    <section>
+      <div class="flex-container">
+        <img
+          src="https://static-cse.canva.com/blob/666314/bestfreestockphotos.jpg"
+          alt="title-photo"
+          width="640"
+          height="270"
+        />
 
-    <!-- <div class="flex-container">
-      <img
-        src="https://media.istockphoto.com/id/1413625386/photo/survival-set-of-nonperishable-foods-in-carton-box.jpg?s=612x612&w=is&k=20&c=HVYdVtEsm0DZxY93xdkuIHk68fBtxcLKQtu85qpR5mc="
-        width="850"
-        height="380"
-        alt="photo"
-      />
-      <div></div>
-    </div> -->
+        <div class="flex-content">
+          <div>
+            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+              ab facilis fugiat totam doloremque, ex illum suscipit, rem at
+              quaerat modi quasi cupiditate enim id unde ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container-1">
+        <div style="order: 2">
+          <img
+            src="https://static-cse.canva.com/blob/666314/bestfreestockphotos.jpg"
+            alt="title-photo"
+            width="640"
+            height="270"
+          />
+        </div>
+
+        <div class="flex-content-1" style="order: 1">
+          <div>
+            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+              ab facilis fugiat totam doloremque, ex illum suscipit, rem at
+              quaerat modi quasi cupiditate enim id unde ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -13,18 +14,53 @@
     <main>
       <section>
         <div>
-          <p>
+          <h1>
             The block elements
-            are::div,footer,nav,main,section,table,p,h1-h6,li,ul,form,article
-          </p>
+            are::div,footer,nav,main,section,table,p,h1-h6,li,ul,form,article,figure
+          </h1>
+          <header>
+            <nav>This is nav section</nav>
+          </header>
+          <main>
+            This is main section
+            <div class="block">This is div block</div>
+            <section>
+              <article><p>This is an article</p></article>
+            </section>
+            <section>
+              <table>
+                <tr>
+                  <th>Category</th>
+                  <th>Product</th>
+                </tr>
+              </table>
+            </section>
+            <section>
+              <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Banana</li>
+              </ul>
+            </section>
+          </main>
+
+          <footer>This is footer</footer>
         </div>
       </section>
       <section>
         <div>
-          <p>
+          <h1>
             The inline elements
             are::a,b,br,input,strong,i,button,img,span,sub,textarea,select
-          </p>
+          </h1>
+          <a href="/">This is a link</a>
+          <b>This is bold</b>
+          <strong>This is strong tag</strong>
+          <i>This is italic tag</i>
+          <button>This is button tag</button>
+          <span>This is span element</span>
+          <sub>This is subscript</sub>
+          <textarea name="desc" cols="5" rows="2"></textarea>
         </div>
       </section>
     </main>

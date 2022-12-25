@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        height: 100vh;
+        color: rgb(0, 0, 0);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.7fr;
+        grid-template-areas:
+          "header header header" "nav nav nav" "sidebar-left main sidebar-right"
+          "sidebar-left main sidebar-right" "footer footer footer";
+        margin-inline: 40px 40px;
+        text-align: center;
+        row-gap: 5px;
+        column-gap: 5px;
+        font-weight: bold;
+      }
+      header {
+        background-color: #3a3a3a;
+        grid-area: header;
+        color: #e5dce9;
+      }
+      nav {
+        background-color: #e5dce9;
+        grid-area: nav;
+      }
+      main {
+        background-color: aqua;
+        grid-area: main;
+      }
+      #sidebar-left {
+        background-color: #e8e8e8;
+        grid-area: sidebar-left;
+      }
+      #sidebar-right {
+        background-color: #755e7b;
+        grid-area: sidebar-right;
+      }
+      footer {
+        background-color: #3a3a3a;
+        grid-area: footer;
+        color: #e5dce9;
+      }
+      @media only screen and(max-width:500px) {
+        .container {
+          grid-template-columns: 1fr;
+          grid-template-rows: 0.2fr 0.2fr 0.6fr 0.4fr 0.4fr 0.2fr;
+          grid-template-areas: "header" "nav" "main" "sidebar-right" "sidebar-left" "footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <nav>Navigation</nav>
+      <main>Main</main>
+      <div id="sidebar-left">Sidebar-left</div>
+      <div id="sidebar-right">Sidebar-right</div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

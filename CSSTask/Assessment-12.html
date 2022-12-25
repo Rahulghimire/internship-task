@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f7f7f7;
+      }
+      section {
+        margin: 40px;
+      }
+      .header {
+        text-align: center;
+      }
+      .header__title,
+      .header__title--red {
+        font-size: 48px;
+      }
+      .header__body {
+        font-size: 20px;
+        padding: 5px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .card--white,
+      .card--blue,
+      .card--green,
+      .card--lightred {
+        width: 268px;
+        height: 327px;
+        background-color: #fff;
+        margin: 6px;
+        text-align: center;
+      }
+      .card--green {
+        background-color: #d1dfbf;
+      }
+      .card--lightred {
+        background-color: #f9dbdb;
+      }
+      .card__title {
+        font-weight: 700;
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px;
+      }
+      .card__body {
+        padding: 10px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+      }
+
+      .card__button,
+      .card__button--blue,
+      .card__button--lightred {
+        padding: 10px;
+        width: 126px;
+        height: 40px;
+        margin-top: 40px;
+        background-color: #515151;
+        color: #f7f7f7;
+        border: none;
+      }
+      .card--blue {
+        background-color: #e4f2ff;
+      }
+      .card__button--blue {
+        background-color: #0047ff;
+      }
+      .card__button--lightred {
+        background-color: #a36b6b;
+      }
+      .header__title--red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="services">
+      <div class="header">
+        <h1 class="header__title">Development Services</h1>
+        <p class="header__body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, alias?
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="card--white">
+          <h1 class="card__title">App Development</h1>
+          <p class="card__body">
+            Nunc, sit ut quam nulla dolor pharetra id vivamus aenean. Sagittis
+            quis fermentum arcu pellentesque est tellus, vitae mi condimentum.
+            Ipsum sed sit posuere laoreet diam.
+          </p>
+          <button type="button" class="card__button">Learn More</button>
+        </div>
+        <div class="card--blue">
+          <h1 class="card__title">Mobility Services</h1>
+          <p class="card__body">
+            Nunc, sit ut quam nulla dolor pharetra id vivamus aenean. Sagittis
+            quis fermentum arcu pellentesque est tellus, vitae mi condimentum.
+            Ipsum sed sit posuere laoreet diam.
+          </p>
+          <button type="button" class="card__button--blue">Learn More</button>
+        </div>
+        <div class="card--green">
+          <h1 class="card__title">Consulting</h1>
+          <p class="card__body">
+            Nunc, sit ut quam nulla dolor pharetra id vivamus aenean. Sagittis
+            quis fermentum arcu pellentesque est tellus, vitae mi condimentum.
+            Ipsum sed sit posuere laoreet diam.
+          </p>
+          <button type="button" class="card__button">Learn More</button>
+        </div>
+        <div class="card--lightred">
+          <h1 class="card__title">24/7 Support</h1>
+          <p class="card__body">
+            Nunc, sit ut quam nulla dolor pharetra id vivamus aenean. Sagittis
+            quis fermentum arcu pellentesque est tellus, vitae mi condimentum.
+            Ipsum sed sit posuere laoreet diam.
+          </p>
+          <button type="button" class="card__button--lightred">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="header">
+        <h1 class="header__title--red">Features</h1>
+        <p class="header__body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, alias?
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div
+        class="container"
+        style="display: flex; align-items: center; width: 100%"
+      >
+        <div
+          class="text-content"
+          style="width: 200px; height: 200px; margin-right: 100px"
+        >
+          <h1>This is header</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolor
+            laboriosam unde reiciendis tempora eveniet distinctio! Incidunt sed
+            facere rem.
+          </p>
+          <button class="card__button--lightred">Learn More</button>
+        </div>
+        <div>
+          <img
+            src="https://media.istockphoto.com/id/1322104312/photo/freedom-chains-that-transform-into-birds-charge-concept.jpg?s=612x612&w=is&k=20&c=Syeg7NWDem3AIEazRG_o-ZW6t_MAyC5QNWbz8WZ1Ds8="
+            alt="demo-photo"
+            width="440"
+            height="440"
+            style="border-radius: 50%; border: 10px solid rgb(185, 138, 138)"
+          />
+        </div>
+      </div>
+      <div
+        class="container"
+        style="display: flex; align-items: center; width: 100%"
+      >
+        <div
+          class="text-content"
+          style="width: 200px; height: 200px; margin-right: 100px; order: 2"
+        >
+          <h1>This is header</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolor
+            laboriosam unde reiciendis tempora eveniet distinctio! Incidunt sed
+            facere rem.
+          </p>
+          <button class="card__button--lightred">Learn More</button>
+        </div>
+        <div style="order: 1">
+          <img
+            src="https://media.istockphoto.com/id/1322104312/photo/freedom-chains-that-transform-into-birds-charge-concept.jpg?s=612x612&w=is&k=20&c=Syeg7NWDem3AIEazRG_o-ZW6t_MAyC5QNWbz8WZ1Ds8="
+            alt="demo-photo"
+            width="440"
+            height="440"
+            style="
+              border-radius: 50%;
+              border: 10px solid rgb(185, 138, 138);
+              margin-right: 100px;
+            "
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

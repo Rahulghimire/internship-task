@@ -11,8 +11,7 @@
         height: 50px;
         background-color: red;
         margin: auto;
-        animation: 3s alternate infinite;
-        animation-name: example;
+        animation: example 2s alternate infinite;
         animation-timing-function: ease-in;
       }
       @keyframes example {
@@ -21,18 +20,17 @@
         }
         25% {
           background-color: blue;
-          transform: scale(0.8) rotate(0deg);
-          border-radius: 40%;
+          border-radius: 20%;
         }
         50% {
-          background-color: blue;
-          transform: scale(0.6) rotate(145deg);
-          border-radius: 60%;
+          background-color: rgb(135, 135, 191);
+          transform: scale(0.6) rotate(180deg);
+          border-radius: 30%;
         }
         100% {
-          background-color: rgb(111, 111, 171);
-          border-radius: 80%;
-          transform: rotate(360deg);
+          background-color: rgb(27, 27, 70);
+          transform: scale(0.5);
+          border-radius: 50%;
         }
       }
     </style>

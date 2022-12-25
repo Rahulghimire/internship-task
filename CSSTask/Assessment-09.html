@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .namelist {
+      list-style: none;
+    }
+    .namelist li::before {
+      content: "✓ ";
+    }
+    .namelist li {
+      display: inline-block;
+      position: relative;
+      color: #000000;
+    }
+    .namelist li:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #000000;
+    }
+    .namelist li:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  </style>
+  <body>
+    <div>
+      <ul class="namelist">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </div>
+  </body>
+</html>

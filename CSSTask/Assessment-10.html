@@ -5,6 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      form {
+        background-color: pink;
+        text-align: center;
+        width: min(600px, 90vw);
+        margin: auto;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: max(1rem, 10vh);
+      }
+      div {
+        padding: clamp(10px, 6vw, 50px);
+        width: clamp(140px, 90vw, 600px);
+        height: 100vh;
+        box-sizing: border-box;
+        background-color: hsl(200, 100%, 80%);
+        border: black 1px solid;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <h1>Using min and max property for responsive</h1>
+      <label for="name">name:&nbsp;</label><input type="text" id="name" />
+    </form>
+
+    <div>
+      <h1>Using clamp</h1>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,19 @@
+section,
+      header {
+        margin: 40px;
+      }
+      .left,
+      .right {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .clear {
+        clear: both;
+      }

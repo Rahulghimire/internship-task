@@ -1,0 +1,30 @@
+/* Assessment-01 css*/
+body{
+    margin: 30px;
+}
+/* unvisited link */
+.top-section,.header{
+    margin: 20px;
+}
+a:link {
+    color: red;
+  }
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  input[type=text] {
+    width: 100px;
+    transition: width .35s ease-in-out;
+  }
+  input[type=text]:focus {
+    width: 250px;
+}  

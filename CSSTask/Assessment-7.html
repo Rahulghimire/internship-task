@@ -5,83 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      section {
-        margin-inline: 20px 20px;
-      }
-      .container {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        /* grid-template-columns: 120px 120px 120px;
-        grid-template-rows: 120px 120px 120px; */
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 50px, 1fr, 1fr, 1fr;
-        row-gap: 10px;
-        column-gap: 10px;
-        text-align: center;
-      }
-      .item {
-        height: 50px;
-        width: 50px;
-        color: aliceblue;
-      }
-      .header,
-      .navigation,
-      .side-left,
-      .main,
-      .side-right,
-      .footer {
-        width: 100%;
-      }
-      .header {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        text-align: center;
-        background-color: #3a3a3a;
-        height: 50px;
-      }
-      .navigation {
-        grid-column: 2/3;
-        background-color: #e5dce9;
-        height: 30px;
-      }
-      .side-left {
-        grid-row: 2/4;
-        background-color: #e8e8e8;
-        height: 450px;
-      }
-      .main {
-        grid-row: 3/4;
-        background-color: #d9d9d9;
-        height: 410px;
-      }
-      .side-right {
-        grid-row: 2/4;
-        background-color: #755e7b;
-        height: 450px;
-      }
-      .footer {
-        grid-column: 1/4;
-        background-color: #3a3a3a;
-      }
-      @media only screen and(max-width:428px) {
-        .container {
-          grid-template-columns: repeat(auto-fill, minmax(200px, 252px));
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./css/Assessment-7.css" />
   </head>
   <body>
-    <section>
-      <div class="container">
-        <div class="item header">Header</div>
-        <div class="item navigation">Navigation</div>
-        <div class="item side-left">Sidebar Left</div>
-        <div class="item main">Main</div>
-        <div class="item side-right">Sidebar Right</div>
-        <div class="item footer">Footer</div>
-      </div>
-    </section>
+    <div class="container">
+      <header>Header</header>
+      <nav>Navigation</nav>
+      <main>Main</main>
+      <div id="sidebar-left">Sidebar-left</div>
+      <div id="sidebar-right">Sidebar-right</div>
+      <footer>Footer</footer>
+    </div>
   </body>
 </html>

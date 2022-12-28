@@ -179,23 +179,43 @@ main {
 .card--one {
   grid-area: card--one;
 }
+.card--horizontal {
+  padding: 5px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Inter";
+}
 .card__title {
+  text-align: justify;
   font-style: normal;
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 3rem;
+  height: 30%;
+  margin: 0;
+  padding: 0;
   color: #c5c6ce;
-  padding: 0.2rem;
 }
 .card__para1 {
-  text-align: center;
-  padding: 0.2rem;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+  height: 30%;
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #00001a;
+  text-align: center;
 }
-/* .card__para2 {
-} */
+.card__para2 {
+  height: 30%;
+  width: 75%;
+  font-size: 1.5rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
 
 .card--two {
   grid-area: card--two;

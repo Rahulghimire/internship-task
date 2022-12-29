@@ -6,6 +6,9 @@
 body {
   background-color: #f7f7f7;
 }
+h1 {
+  font-size: 30px;
+}
 section {
   margin: 40px;
 }

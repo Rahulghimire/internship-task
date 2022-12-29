@@ -14,6 +14,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/Assignment16.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
   </head>
   <body>
     <div class="grid-container">
@@ -23,12 +27,15 @@
             <img src="../assets/logo.png" alt="logo" width="90%" height="90%" />
           </div>
           <input type="checkbox" id="tabnav" class="tab-nav" />
-          <label for="close"></label>
           <label for="tabnav" class="label">
             <div class="burger"></div>
             <div class="burger"></div>
             <div class="burger"></div>
           </label>
+          <label for="close" class="close"
+            ><i class="fa-solid fa-xmark"></i
+          ></label>
+          <!-- <input type="checkbox" id="close-checkbox" /> -->
           <div class="nav-links">
             <ul class="content_nav">
               <li><a href="">Home</a></li>
@@ -87,7 +94,16 @@
       </div>
       <div class="card--one">
         <div class="card--image">
-          <img src="../assets/comp.png" alt="card-photo" style="float: left" />
+          <figure style="position: relative">
+            <img
+              src="../assets/comp.png"
+              alt="card-photo"
+              style="float: left"
+            />
+            <figure class="image--background">
+              <img src="../assets/keyboard.png" alt="card-photo" />
+            </figure>
+          </figure>
         </div>
         <div class="card--horizontal horizontal--container">
           <h1 class="card__title">01</h1>
@@ -99,11 +115,22 @@
       </div>
       <div class="card--two">
         <div class="card--image">
-          <img
-            src="../assets/keyboard.png"
-            alt="card-photo"
-            style="float: left"
-          />
+          <figure style="position: relative">
+            <img
+              src="../assets/keyboard.png"
+              alt="card-photo"
+              style="float: left"
+            />
+            <figure>
+              <figure class="image--background">
+                <img
+                  src="../assets/comp.png"
+                  alt="card-photo"
+                  style="float: left"
+                />
+              </figure>
+            </figure>
+          </figure>
         </div>
         <div class="card--horizontal horizontal--container">
           <h1 class="card__title">02</h1>
@@ -115,11 +142,20 @@
       </div>
       <div class="card--three">
         <div class="card--image">
-          <img
-            src="../assets/controller.png"
-            alt="card-photo"
-            style="float: left"
-          />
+          <figure style="position: relative">
+            <img
+              src="../assets/controller.png"
+              alt="card-photo"
+              style="float: left"
+            />
+            <figure class="image--background">
+              <img
+                src="../assets/keyboard.png"
+                alt="card-photo"
+                style="float: left"
+              />
+            </figure>
+          </figure>
         </div>
         <div class="card--horizontal horizontal--container">
           <h1 class="card__title">03</h1>

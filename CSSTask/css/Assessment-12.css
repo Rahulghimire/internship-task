@@ -1,13 +1,92 @@
-/* * {
+* {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+html {
+  font-size: 10px;
 }
 .container {
+  margin: 3rem;
   display: flex;
   flex-direction: row;
-  margin: auto;
   border: 1px solid black;
-} */
+  justify-content: center;
+  width: 20%;
+  align-items: center;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 3rem;
+}
+.danger--content,
+.fingerprint--content,
+.cow--content {
+  width: 200px;
+}
+span {
+  display: none;
+  background-color: white;
+  font-size: 1.5rem;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip-danger span {
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+.tooltip-fingerprint span {
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.tootltip-cow span {
+  position: absolute;
+}
+.tooltip-cow span {
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+.tooltip-danger:hover i {
+  /* display: block; */
+  color: red;
+}
+.tooltip-danger:hover .danger--content {
+  display: block;
+  color: red;
+}
+.tooltip-fingerprint:hover {
+  fill: blue;
+}
+.tooltip-fingerprint:hover span {
+  display: block;
+  color: blue;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+.cow1 {
+  position: relative;
+}
+.cow2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.tooltip-cow:hover .cow2 {
+  display: block;
+}
+.tooltip-cow:hover .cow--content {
+  display: block;
+  color: pink;
+}

@@ -1,0 +1,43 @@
+@import '../helpers/colors';
+@import '../helpers/fonts';
+@import '../helpers/mixins';
+@import '../helpers/variables';
+@import '../components/buttons';
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;  
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.container{
+   @include flexContainer;
+    .card{
+        flex-basis: 33%;
+        border: 1px solid red;
+        height: 26rem;
+       
+        figure{
+            margin: 0;
+            padding: 0;
+        }
+        &__title{
+            font-size: $h1;
+            font-weight:map-get($font-weight, "bold" ) ;
+        }
+        &__paragraph{
+            margin-top: 1rem;
+            font-size: $p;
+            text-align: left;
+            font-weight:map-get($font-weight, "normal" )
+        }
+        .button{
+            margin-top: 1rem;
+        }
+    }
+}

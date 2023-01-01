@@ -1,0 +1,12 @@
+@mixin flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $bg-color;
+    width: 100%;
+}
+// @mixin flexCard {
+//     flex-basis: 33%;
+//     border: 1px solid red;
+// }

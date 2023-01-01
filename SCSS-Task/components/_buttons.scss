@@ -1,0 +1,9 @@
+@import '../helpers/variables';
+.button{
+    background-color: $btn-color;
+    border-radius: $btn-radius;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    color: $bg-color;
+    font-size: $btn-text;
+}

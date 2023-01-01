@@ -3,6 +3,7 @@
 @import '../helpers/mixins';
 @import '../helpers/variables';
 @import '../components/buttons';
+@import '../helpers/media-queries';
 *{
     margin: 0;
     padding: 0;
@@ -15,13 +16,12 @@ body{
     padding: 2rem;
     box-sizing: border-box;
 }
-.container{
+.container{ 
    @include flexContainer;
     .card{
         flex-basis: 33%;
-        border: 1px solid red;
+        // border: 1px solid red;
         height: 26rem;
-       
         figure{
             margin: 0;
             padding: 0;
@@ -29,15 +29,110 @@ body{
         &__title{
             font-size: $h1;
             font-weight:map-get($font-weight, "bold" ) ;
+            line-height: 120%;
         }
         &__paragraph{
             margin-top: 1rem;
             font-size: $p;
             text-align: left;
-            font-weight:map-get($font-weight, "normal" )
+            font-weight:map-get($font-weight, "normal" );
+            line-height: 180%;
         }
         .button{
             margin-top: 1rem;
+            &:hover{
+                background-color: $black;
+            }
         }
+    }
+//     @include forScreenSizesMax(desktop){
+// }
+@include forScreenSizesMax(tablet){
+    .card{
+        flex-basis: 48%;
+    }      
+}
+@include forScreenSizesMax(phone){
+    .card{
+        flex-direction: column;
+        flex-basis: 100%;
+    } 
+}
+}
+.destination{
+    &__header{
+        text-align: center;
+        &__paragraph{
+            font-size: $p;
+            color:$army-green;
+            font-weight: map-get($font-weight, "bold" );
+        }
+        &__title{
+            font-size: $h1;
+            font-weight: map-get($font-weight, "bold" );
+            color: $black;
+        }
+    }
+    .container1{
+        @include flexContainer;
+        margin-top: 1.5rem;
+        gap: 1rem;
+        .card{
+            flex-basis: 30%;
+            // border: 1px solid red;
+            height: 35rem;
+            box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 1rem;
+            padding: 0.3rem;
+            &__image--background{
+                text-align: center;
+                img{
+                    border-radius: 1rem;
+                    // object-fit: contain;
+                }
+            }
+            &__title{
+                font-size: $h2;
+                color: $black;
+                font-weight: map-get($font-weight, "bold");
+                text-align: left;
+                padding: 1rem;
+            }
+            &__body{
+                padding: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &--price{
+                    font-size: $body-1;
+                    font-weight: map-get($font-weight , "bold" );
+                    color: $army-green;
+                }
+                &--price2{
+                    font-size: $body-2;
+                    font-weight: map-get($font-weight, "normal" );
+                    margin-left: 0.6rem;
+                    color: $black;
+                }
+            }
+
+        }
+
+    }
+//         @include forScreenSizesMax(desktop){
+//             .card{
+//                 flex-basis: 28%;
+//             }
+// }
+    @include forScreenSizesMax(tablet){
+        .card{
+            flex-basis: 40%;
+        }      
+    }
+    @include forScreenSizesMax(phone){
+        .card{
+            flex-direction: column;
+            flex-basis: 100%;
+        } 
     }
 }

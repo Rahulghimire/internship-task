@@ -1,3 +1,21 @@
-$mobile-res-min-width:425px;
-$tablet-res-min-width:768px;
-$desktop-res-min-width:1024px;
+$mobile-res-max-width:426px;
+$tablet-res-max-width:768px;
+$desktop-res-max-width:1024px;
+
+@mixin forScreenSizesMax($deviceType){
+    @if $deviceType == desktop {
+        @media only screen and (max-width:$desktop-res-max-width){
+            @content;
+        }    
+    }
+    @if $deviceType == tablet {
+        @media only screen and (max-width:$tablet-res-max-width){
+            @content;
+        }    
+    }
+    @if $deviceType == phone {
+        @media only screen and (max-width:$mobile-res-max-width){
+            @content;
+        }    
+    }
+}

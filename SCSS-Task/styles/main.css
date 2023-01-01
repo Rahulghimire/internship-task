@@ -33,7 +33,6 @@ body {
 }
 .container .card {
   flex-basis: 33%;
-  border: 1px solid red;
   height: 26rem;
 }
 .container .card figure {
@@ -41,15 +40,103 @@ body {
   padding: 0;
 }
 .container .card__title {
-  font-size: 1.92rem;
+  font-size: 2.76rem;
   font-weight: 700;
+  line-height: 120%;
 }
 .container .card__paragraph {
   margin-top: 1rem;
   font-size: 1.6rem;
   text-align: left;
   font-weight: 400;
+  line-height: 180%;
 }
 .container .card .button {
   margin-top: 1rem;
+}
+.container .card .button:hover {
+  background-color: #3D3E48;
+}
+@media only screen and (max-width: 768px) {
+  .container .card {
+    flex-basis: 48%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .container .card {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}
+
+.destination__header {
+  text-align: center;
+}
+.destination__header__paragraph {
+  font-size: 1.6rem;
+  color: #295943;
+  font-weight: 700;
+}
+.destination__header__title {
+  font-size: 2.76rem;
+  font-weight: 700;
+  color: #3D3E48;
+}
+.destination .container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+.destination .container1 .card {
+  flex-basis: 30%;
+  height: 35rem;
+  box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  padding: 0.3rem;
+}
+.destination .container1 .card__image--background {
+  text-align: center;
+}
+.destination .container1 .card__image--background img {
+  border-radius: 1rem;
+}
+.destination .container1 .card__title {
+  font-size: 1.92rem;
+  color: #3D3E48;
+  font-weight: 700;
+  text-align: left;
+  padding: 1rem;
+}
+.destination .container1 .card__body {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.destination .container1 .card__body--price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #295943;
+}
+.destination .container1 .card__body--price2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-left: 0.6rem;
+  color: #3D3E48;
+}
+@media only screen and (max-width: 768px) {
+  .destination .card {
+    flex-basis: 40%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .destination .card {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

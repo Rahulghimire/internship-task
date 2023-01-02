@@ -41,7 +41,7 @@ body{
         .button{
             margin-top: 1rem;
             &:hover{
-                background-color: $black;
+                @include btnHover;
             }
         }
     }

@@ -10,3 +10,6 @@
 //     flex-basis: 33%;
 //     border: 1px solid red;
 // }
+@mixin btnHover {
+    background-color: $black;
+}

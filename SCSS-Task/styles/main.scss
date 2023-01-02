@@ -136,3 +136,146 @@ body{
         } 
     }
 }
+
+// style guide css
+.header{
+    &__title{
+        font-size: 10rem;
+    }
+}
+.main{
+    &__title{
+        font-size: 4rem;
+        font-weight: map-get($font-weight, "normal" );
+    }
+    // .style--container1{
+    //     display: flex;
+    //     // justify-content: space-between;
+    //         .container--left{
+    //             flex-basis: 30%;
+    //             font-weight:map-get($font-weight, "normal" ) ;
+    //             &__title{
+    //                 font-size: 2.7rem;
+    //                 font-weight:map-get($font-weight, "normal" ) ;
+    //                 line-height: $line-height-h1;
+    //             }
+    //             &__para1{
+    //                 font-size: $p;
+    //                 color: $style-font-color;
+    //             }
+    //             &__para2{
+    //                 font-size: $p;
+    //                 color: $style-font-color;
+    //             }
+
+    //         }
+    //         .container--right{
+    //             font-weight:map-get($font-weight, "normal" ) ;
+    //             .container--middle__title{
+    //                 font-size: $h1;
+    //             }
+    //         }
+        
+    // }
+    // .style--container2{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     font-weight: map-get($font-weight, "normal"  );
+    //     .container--middle{
+    //         // flex-basis: 20%;
+    //         &__title{
+    //             font-size: $h2;
+    //             font-weight: map-get($font-weight, "normal"  );
+    //             line-height: $line-height-h2;
+    //         }
+    //         &__para1{
+    //             font-size: 1.4rem;
+    //             color: $style-font-color;
+    //         }
+    //         &__para2{
+    //             font-size: 1.4rem;
+    //             color: $style-font-color;
+    //         }
+    //     }
+
+    // }
+    .grid-container{
+        display: grid;
+        grid-template-columns:repeat(1fr) ;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: "grid__item--first" "grid__item--second"
+        "grid__item--third"
+        "grid__item--fourth";
+        .grid__item--first{
+            display: flex;
+            .list__item--left{
+                flex-basis: 30%;
+                .list1__title{
+                    font-size: $h1;
+                    font-weight:map-get($font-weight, "normal" ) ;
+                    line-height: $line-height-h1;
+                }
+                .list1__para1{
+                    font-size: $p;
+                    color: $style-font-color;
+                }
+                .list1__para2{
+                    font-size: $p;
+                    color: $style-font-color;
+                }
+                .list--right__title{
+                    font-size: $h1;
+                }
+            }
+            .list--right__title1{
+                font-size: $h1;
+            }
+        }
+        .grid__item--second{
+            display: flex;
+            .list__item--left{
+                flex-basis: 21.5%;
+                .list2__title{
+                    font-size: $h2;
+                    font-weight:map-get($font-weight, "normal" ) ;
+                    line-height: $line-height-h1;
+                }
+                .list2__para1{
+                    font-size: $p;
+                    color: $style-font-color;
+                }
+                .list2__para2{
+                    font-size: $p;
+                    color: $style-font-color;
+                }
+               
+            }
+            .list2--item__title2{
+                font-size: $h2;
+            }
+
+
+        }
+        .grid__item--third{
+            display: flex;
+
+
+        }
+        .grid__item--fourth{
+            display: flex;
+        }
+    }
+    .grid__item--first{
+        grid-area: grid__item--first;
+    }
+    .grid__item--second{
+        grid-area: grid__item--second;
+    }
+    .grid__item--third{
+        grid-area: grid__item--third;
+    }
+    .grid__item--fourth{
+        grid-area: grid__item--fourth;
+    }
+
+}

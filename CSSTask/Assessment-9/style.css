@@ -1,25 +1,28 @@
 .namelist {
-    list-style: none;
-  }
-  .namelist li::before {
-    content: "✓ ";
-  }
-  .namelist li {
-    display: inline-block;
-    position: relative;
-    color: #000000;
-  }
-  .namelist li:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-  }
-  .namelist li:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+  list-style: none;
+}
+.namelist li::before {
+  content: "✓ ";
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+.namelist li {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+.namelist li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+}
+.namelist li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

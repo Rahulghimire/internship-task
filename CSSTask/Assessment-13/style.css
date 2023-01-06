@@ -67,6 +67,9 @@ section {
   color: #f7f7f7;
   border: none;
 }
+button:hover {
+  cursor: pointer;
+}
 .card--blue {
   background-color: #e4f2ff;
 }

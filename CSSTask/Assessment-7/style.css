@@ -16,6 +16,11 @@ header {
   grid-area: header;
   color: #e5dce9;
 }
+.container-inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 nav {
   background-color: #e5dce9;
   grid-area: nav;

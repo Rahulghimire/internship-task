@@ -33,7 +33,7 @@ section {
 .card--green,
 .card--lightred {
   width: 268px;
-  height: 327px;
+  min-height: 327px;
   background-color: #fff;
   margin: 6px;
   text-align: center;

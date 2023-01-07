@@ -83,8 +83,19 @@ figure {
   left: 0;
   display: none;
 }
-.tooltip-cow:hover .cow2 {
+.tooltip-cow {
+  background-image: url("../assets/cow.svg");
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  position: relative;
+}
+.tooltip-cow:hover {
   display: block;
+  background-image: url("../assets/cow-pink.svg");
+  background-size: cover;
+  height: 25px;
+  width: 25px;
 }
 .tooltip-cow:hover .cow--content {
   display: block;

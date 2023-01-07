@@ -1,33 +1,58 @@
-.flex-container,
-.flex-container-1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-basis: 60%;
-  flex-direction: column;
-  width: 100%;
-}
-.flex-container {
-  margin-bottom: 25px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;700&family=Montserrat:wght@300&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 figure {
   margin: 0;
   padding: 0;
 }
-img {
-  max-width: 100%;
+.outer-container {
+  padding: 70px;
 }
-@media screen and (min-width: 768px) {
-  .flex-container,
-  .flex-container-1 {
-    flex-direction: row;
-    width: 100%;
-  }
-  section {
-    margin: 40px;
-  }
+.flex-container {
+  display: flex;
+  flex-direction: column;
 
-  .flex-content {
-    padding: 15px;
+  row-gap: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.image {
+  flex-basis: 60%;
+}
+.content {
+  flex-basis: 33%;
+  align-self: center;
+}
+.flex-container div:nth-child(even) .image {
+  order: 2;
+}
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .img {
+    max-width: 100%;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .outer-container {
+    width: 100%;
+    padding: 5px;
+  }
+  .flex-container div .image {
+    order: 1;
+  }
+  .content {
+    max-width: 97%;
   }
 }

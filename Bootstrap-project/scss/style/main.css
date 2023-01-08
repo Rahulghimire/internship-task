@@ -57,6 +57,10 @@ body {
   background-color: #dd7777;
 }
 
+.accordion {
+  margin-bottom: 20px;
+  padding: 20px 0px;
+}
 .accordion-button {
   background-color: #aba299;
 }
@@ -68,6 +72,60 @@ body {
   transform: scale(0.7) !important;
 }
 
-.container {
-  position: relative;
+.container .card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container .card-title {
+  margin-bottom: 2.4rem;
+  font-size: 70px;
+  max-width: 850px;
+  line-height: 95%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+}
+.container .card-text {
+  display: flex;
+  text-align: center;
+  width: 40%;
+}
+.container .button-container {
+  margin-top: 2rem;
+}
+.container .button-container .card-button {
+  width: 139px;
+  height: 40px;
+}
+
+ul,
+ol,
+a {
+  list-style: none;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  background-color: #393939;
+  color: #fff;
+}
+.footer .container {
+  width: 100%;
+  margin: 4rem 0;
+  padding: 3rem;
+}
+.footer .container .row {
+  margin: 0 2.5rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

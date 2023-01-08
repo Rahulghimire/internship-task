@@ -1,6 +1,6 @@
-:root{
-  --bg-color:white;
-  --black:black;
+:root {
+  --bg-color: white;
+  --black: black;
 }
 * {
   box-sizing: border-box;
@@ -35,7 +35,7 @@ html {
   text-align: center;
   height: 25px;
 }
-.cow--content{
+.cow--content {
   width: 150px;
 }
 span {
@@ -78,7 +78,7 @@ span {
   position: absolute;
   top: 30px;
   left: -60px;
-  box-shadow: 5px 5px 20px pink;
+  box-shadow: 5px 5px 22px pink;
   background-color: white;
   border-radius: 3px;
   padding: 4px;
@@ -150,7 +150,7 @@ figure {
   width: 10px;
   position: absolute;
   top: -14px;
-  left: 0px;
+  left: 4px;
   background-color: white;
   transform: rotate(45deg);
   z-index: 1;

@@ -13,9 +13,10 @@ figure {
   padding: 0;
 }
 body {
+  max-width: 1450px;
   background-color: var(--bg-color);
   font-family: "Open Sans", sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
   text-decoration: none;
 }

@@ -30,10 +30,11 @@ body {
   justify-content: space-between;
   background-color: #fff;
   width: 100%;
+  padding: 10px;
 }
 .container .card {
-  flex-basis: 33%;
-  height: 26rem;
+  flex-basis: 30%;
+  min-height: 26rem;
 }
 .container .card figure {
   margin: 0;
@@ -130,7 +131,11 @@ body {
   color: #3D3E48;
 }
 @media only screen and (max-width: 768px) {
-  .destination .card {
+  .destination .container1 {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .destination .container1 .card {
     flex-basis: 40%;
   }
 }

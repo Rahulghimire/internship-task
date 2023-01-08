@@ -1,279 +1,279 @@
-@import '../helpers/colors';
-@import '../helpers/fonts';
-@import '../helpers/mixins';
-@import '../helpers/variables';
-@import '../components/buttons';
-@import '../helpers/media-queries';
-*{
-    margin: 0;
-    padding: 0;
+@import "../helpers/colors";
+@import "../helpers/fonts";
+@import "../helpers/mixins";
+@import "../helpers/variables";
+@import "../components/buttons";
+@import "../helpers/media-queries";
+* {
+  margin: 0;
+  padding: 0;
 }
-html{
-    font-size: 62.5%;  
+html {
+  font-size: 62.5%;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    padding: 2rem;
-    box-sizing: border-box;
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
 }
-.container{ 
-   @include flexContainer;
-    .card{
-        flex-basis: 33%;
-        // border: 1px solid red;
-        height: 26rem;
-        figure{
-            margin: 0;
-            padding: 0;
-        }
-        &__title{
-            font-size: $h1;
-            font-weight:map-get($font-weight, "bold" ) ;
-            line-height: 120%;
-        }
-        &__paragraph{
-            margin-top: 1rem;
-            font-size: $p;
-            text-align: left;
-            font-weight:map-get($font-weight, "normal" );
-            line-height: 180%;
-        }
-        .button{
-            margin-top: 1rem;
-            &:hover{
-                @include btnHover;
-            }
-        }
+.container {
+  @include flexContainer;
+  padding: 10px;
+  .card {
+    flex-basis: 30%;
+    // border: 1px solid red;
+    min-height: 26rem;
+    figure {
+      margin: 0;
+      padding: 0;
     }
-//     @include forScreenSizesMax(desktop){
-// }
-@include forScreenSizesMax(tablet){
-    .card{
-        flex-basis: 48%;
-    }      
+    &__title {
+      font-size: $h1;
+      font-weight: map-get($font-weight, "bold");
+      line-height: 120%;
+    }
+    &__paragraph {
+      margin-top: 1rem;
+      font-size: $p;
+      text-align: left;
+      font-weight: map-get($font-weight, "normal");
+      line-height: 180%;
+    }
+    .button {
+      margin-top: 1rem;
+      &:hover {
+        @include btnHover;
+      }
+    }
+  }
+  //     @include forScreenSizesMax(desktop){
+  // }
+  @include forScreenSizesMax(tablet) {
+    .card {
+      flex-basis: 48%;
+    }
+  }
+  @include forScreenSizesMax(phone) {
+    .card {
+      flex-direction: column;
+      flex-basis: 100%;
+    }
+  }
 }
-@include forScreenSizesMax(phone){
-    .card{
-        flex-direction: column;
-        flex-basis: 100%;
-    } 
-}
-}
-.destination{
-    &__header{
+.destination {
+  &__header {
+    text-align: center;
+    &__paragraph {
+      font-size: $p;
+      color: $army-green;
+      font-weight: map-get($font-weight, "bold");
+    }
+    &__title {
+      font-size: $h1;
+      font-weight: map-get($font-weight, "bold");
+      color: $black;
+    }
+  }
+  .container1 {
+    @include flexContainer;
+    margin-top: 1.5rem;
+    gap: 1rem;
+    .card {
+      flex-basis: 30%;
+      // border: 1px solid red;
+      height: 35rem;
+      box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 1rem;
+      padding: 0.3rem;
+      &__image--background {
         text-align: center;
-        &__paragraph{
-            font-size: $p;
-            color:$army-green;
-            font-weight: map-get($font-weight, "bold" );
+        img {
+          border-radius: 1rem;
+          // object-fit: contain;
         }
-        &__title{
-            font-size: $h1;
-            font-weight: map-get($font-weight, "bold" );
-            color: $black;
+      }
+      &__title {
+        font-size: $h2;
+        color: $black;
+        font-weight: map-get($font-weight, "bold");
+        text-align: left;
+        padding: 1rem;
+      }
+      &__body {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--price {
+          font-size: $body-1;
+          font-weight: map-get($font-weight, "bold");
+          color: $army-green;
         }
-    }
-    .container1{
-        @include flexContainer;
-        margin-top: 1.5rem;
-        gap: 1rem;
-        .card{
-            flex-basis: 30%;
-            // border: 1px solid red;
-            height: 35rem;
-            box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
-            border-radius: 1rem;
-            padding: 0.3rem;
-            &__image--background{
-                text-align: center;
-                img{
-                    border-radius: 1rem;
-                    // object-fit: contain;
-                }
-            }
-            &__title{
-                font-size: $h2;
-                color: $black;
-                font-weight: map-get($font-weight, "bold");
-                text-align: left;
-                padding: 1rem;
-            }
-            &__body{
-                padding: 1rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                &--price{
-                    font-size: $body-1;
-                    font-weight: map-get($font-weight , "bold" );
-                    color: $army-green;
-                }
-                &--price2{
-                    font-size: $body-2;
-                    font-weight: map-get($font-weight, "normal" );
-                    margin-left: 0.6rem;
-                    color: $black;
-                }
-            }
-
+        &--price2 {
+          font-size: $body-2;
+          font-weight: map-get($font-weight, "normal");
+          margin-left: 0.6rem;
+          color: $black;
         }
-
+      }
     }
-//         @include forScreenSizesMax(desktop){
-//             .card{
-//                 flex-basis: 28%;
-//             }
-// }
-    @include forScreenSizesMax(tablet){
-        .card{
-            flex-basis: 40%;
-        }      
+  }
+  //         @include forScreenSizesMax(desktop){
+  //             .card{
+  //                 flex-basis: 28%;
+  //             }
+  // }
+  @include forScreenSizesMax(tablet) {
+    .container1 {
+      flex-wrap: nowrap;
+      overflow: scroll;
+      .card {
+        flex-basis: 40%;
+      }
     }
-    @include forScreenSizesMax(phone){
-        .card{
-            flex-direction: column;
-            flex-basis: 100%;
-        } 
+  }
+  @include forScreenSizesMax(phone) {
+    .card {
+      flex-direction: column;
+      flex-basis: 100%;
     }
+  }
 }
 
 // style guide css
-.header{
-    &__title{
-        font-size: 10rem;
-    }
+.header {
+  &__title {
+    font-size: 10rem;
+  }
 }
-.main{
-    &__title{
-        font-size: 4rem;
-        font-weight: map-get($font-weight, "normal" );
-    }
-    // .style--container1{
-    //     display: flex;
-    //     // justify-content: space-between;
-    //         .container--left{
-    //             flex-basis: 30%;
-    //             font-weight:map-get($font-weight, "normal" ) ;
-    //             &__title{
-    //                 font-size: 2.7rem;
-    //                 font-weight:map-get($font-weight, "normal" ) ;
-    //                 line-height: $line-height-h1;
-    //             }
-    //             &__para1{
-    //                 font-size: $p;
-    //                 color: $style-font-color;
-    //             }
-    //             &__para2{
-    //                 font-size: $p;
-    //                 color: $style-font-color;
-    //             }
+.main {
+  &__title {
+    font-size: 4rem;
+    font-weight: map-get($font-weight, "normal");
+  }
+  // .style--container1{
+  //     display: flex;
+  //     // justify-content: space-between;
+  //         .container--left{
+  //             flex-basis: 30%;
+  //             font-weight:map-get($font-weight, "normal" ) ;
+  //             &__title{
+  //                 font-size: 2.7rem;
+  //                 font-weight:map-get($font-weight, "normal" ) ;
+  //                 line-height: $line-height-h1;
+  //             }
+  //             &__para1{
+  //                 font-size: $p;
+  //                 color: $style-font-color;
+  //             }
+  //             &__para2{
+  //                 font-size: $p;
+  //                 color: $style-font-color;
+  //             }
 
-    //         }
-    //         .container--right{
-    //             font-weight:map-get($font-weight, "normal" ) ;
-    //             .container--middle__title{
-    //                 font-size: $h1;
-    //             }
-    //         }
-        
-    // }
-    // .style--container2{
-    //     display: flex;
-    //     justify-content: space-between;
-    //     font-weight: map-get($font-weight, "normal"  );
-    //     .container--middle{
-    //         // flex-basis: 20%;
-    //         &__title{
-    //             font-size: $h2;
-    //             font-weight: map-get($font-weight, "normal"  );
-    //             line-height: $line-height-h2;
-    //         }
-    //         &__para1{
-    //             font-size: 1.4rem;
-    //             color: $style-font-color;
-    //         }
-    //         &__para2{
-    //             font-size: 1.4rem;
-    //             color: $style-font-color;
-    //         }
-    //     }
+  //         }
+  //         .container--right{
+  //             font-weight:map-get($font-weight, "normal" ) ;
+  //             .container--middle__title{
+  //                 font-size: $h1;
+  //             }
+  //         }
 
-    // }
-    .grid-container{
-        display: grid;
-        grid-template-columns:repeat(1fr) ;
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: "grid__item--first" "grid__item--second"
-        "grid__item--third"
-        "grid__item--fourth";
-        .grid__item--first{
-            display: flex;
-            .list__item--left{
-                flex-basis: 30%;
-                .list1__title{
-                    font-size: $h1;
-                    font-weight:map-get($font-weight, "normal" ) ;
-                    line-height: $line-height-h1;
-                }
-                .list1__para1{
-                    font-size: $p;
-                    color: $style-font-color;
-                }
-                .list1__para2{
-                    font-size: $p;
-                    color: $style-font-color;
-                }
-                .list--right__title{
-                    font-size: $h1;
-                }
-            }
-            .list--right__title1{
-                font-size: $h1;
-            }
+  // }
+  // .style--container2{
+  //     display: flex;
+  //     justify-content: space-between;
+  //     font-weight: map-get($font-weight, "normal"  );
+  //     .container--middle{
+  //         // flex-basis: 20%;
+  //         &__title{
+  //             font-size: $h2;
+  //             font-weight: map-get($font-weight, "normal"  );
+  //             line-height: $line-height-h2;
+  //         }
+  //         &__para1{
+  //             font-size: 1.4rem;
+  //             color: $style-font-color;
+  //         }
+  //         &__para2{
+  //             font-size: 1.4rem;
+  //             color: $style-font-color;
+  //         }
+  //     }
+
+  // }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "grid__item--first" "grid__item--second"
+      "grid__item--third"
+      "grid__item--fourth";
+    .grid__item--first {
+      display: flex;
+      .list__item--left {
+        flex-basis: 30%;
+        .list1__title {
+          font-size: $h1;
+          font-weight: map-get($font-weight, "normal");
+          line-height: $line-height-h1;
         }
-        .grid__item--second{
-            display: flex;
-            .list__item--left{
-                flex-basis: 21.5%;
-                .list2__title{
-                    font-size: $h2;
-                    font-weight:map-get($font-weight, "normal" ) ;
-                    line-height: $line-height-h1;
-                }
-                .list2__para1{
-                    font-size: $p;
-                    color: $style-font-color;
-                }
-                .list2__para2{
-                    font-size: $p;
-                    color: $style-font-color;
-                } 
-            }
-            .list2--item__title2{
-                font-size: $h2;
-            }
-
+        .list1__para1 {
+          font-size: $p;
+          color: $style-font-color;
         }
-        .grid__item--third{
-            display: flex;
-
-
+        .list1__para2 {
+          font-size: $p;
+          color: $style-font-color;
         }
-        .grid__item--fourth{
-            display: flex;
+        .list--right__title {
+          font-size: $h1;
         }
+      }
+      .list--right__title1 {
+        font-size: $h1;
+      }
     }
-    .grid__item--first{
-        grid-area: grid__item--first;
+    .grid__item--second {
+      display: flex;
+      .list__item--left {
+        flex-basis: 21.5%;
+        .list2__title {
+          font-size: $h2;
+          font-weight: map-get($font-weight, "normal");
+          line-height: $line-height-h1;
+        }
+        .list2__para1 {
+          font-size: $p;
+          color: $style-font-color;
+        }
+        .list2__para2 {
+          font-size: $p;
+          color: $style-font-color;
+        }
+      }
+      .list2--item__title2 {
+        font-size: $h2;
+      }
     }
-    .grid__item--second{
-        grid-area: grid__item--second;
+    .grid__item--third {
+      display: flex;
     }
-    .grid__item--third{
-        grid-area: grid__item--third;
+    .grid__item--fourth {
+      display: flex;
     }
-    .grid__item--fourth{
-        grid-area: grid__item--fourth;
-    }
-
+  }
+  .grid__item--first {
+    grid-area: grid__item--first;
+  }
+  .grid__item--second {
+    grid-area: grid__item--second;
+  }
+  .grid__item--third {
+    grid-area: grid__item--third;
+  }
+  .grid__item--fourth {
+    grid-area: grid__item--fourth;
+  }
 }

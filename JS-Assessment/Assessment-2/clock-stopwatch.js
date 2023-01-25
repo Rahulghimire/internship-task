@@ -64,10 +64,10 @@ reset.setAttribute("id", "reset");
 
 //stopwatch
 
-let hrs = 0;
-let secs = 0;
-let mins = 0;
-let count = 0;
+let hrs = 00;
+let secs = 00;
+let mins = 00;
+let count = 00;
 
 let timer = false;
 
@@ -109,7 +109,7 @@ function stopWatch() {
     // tmins.append(mins);
     // tsec.append(secs);
     document.getElementById("sec").innerHTML = secs;
-    setTimeout("stopWatch()", 10); //10 milisecond
+    setTimeout("stopWatch()", 1000);
   }
 }
 

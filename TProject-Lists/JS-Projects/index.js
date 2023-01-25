@@ -9,7 +9,7 @@ const projectJS = [
     assignnumber: "#2",
     clink:
       "https://github.com/Rahulghimire/internship-task/tree/main/JS-Assessment/Assessment-2",
-    dlink1:
+    dlink:
       "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-2/index.html",
   },
 ];

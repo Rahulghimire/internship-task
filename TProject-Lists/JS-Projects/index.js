@@ -10,7 +10,7 @@ const projectJS = [
     clink:
       "https://github.com/Rahulghimire/internship-task/tree/main/JS-Assessment/Assessment-2",
     dlink1:
-      "https://rahulghimire.github.io/internship-task/TProject-Lists/JS-Projects/",
+      "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-2/index.html",
   },
 ];
 

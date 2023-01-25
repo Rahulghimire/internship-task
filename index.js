@@ -26,7 +26,7 @@ let cardContainer = document.createElement("div");
 div.appendChild(cardContainer);
 cardContainer.classList.add("card-container");
 
-for (i = 0; i < projectLists.length - 1; i++) {
+for (i = 0; i <= projectLists.length - 1; i++) {
   let card = document.createElement("div");
   cardContainer.appendChild(card);
   card.classList.add("card");

@@ -18,6 +18,9 @@ body {
   align-items: center;
 }
 
+button {
+  cursor: pointer;
+}
 .stop-btn,
 .clock-btn,
 .btn {
@@ -27,7 +30,8 @@ body {
   color: white;
   margin: 30px;
 }
-.time {
+.time,
+.time1 {
   text-align: center;
   font-weight: 800;
   font-size: 3.5rem;

@@ -247,9 +247,11 @@ function currentTime() {
   setTimeout(currentTime, 1000);
   console.log(hrs, mins, secs);
 }
+
+// add zero in front of numbers < 10
 function checkTime(i) {
   if (i < 10) {
     i = "0" + i;
-  } // add zero in front of numbers < 10
+  }
   return i;
 }

@@ -12,6 +12,13 @@ const projectJS = [
     dlink:
       "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-2/index.html",
   },
+  {
+    assignnumber: "#3",
+    clink:
+      "https://github.com/Rahulghimire/internship-task/tree/main/JS-Assessment/Assessment-3/index.js",
+    dlink:
+      "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-3/index.html",
+  },
 ];
 
 let div = document.querySelector("div");

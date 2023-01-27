@@ -33,6 +33,7 @@ img {
 .containerBottom {
   border-top: 3px solid rgb(56, 56, 255);
   border-bottom: 3px solid rgb(56, 56, 255);
+  overflow: hidden;
 }
 .name-container {
   margin-right: 50px;
@@ -43,4 +44,26 @@ span {
 }
 a {
   color: white;
+}
+
+@media only screen and (max-width: 893px) {
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    border: none;
+  }
+  img {
+    border: 8px solid blue;
+  }
+
+  .containerRight {
+    width: 75%;
+  }
+  .containerBottom {
+    width: 90%;
+  }
+  .image-container:hover {
+    box-shadow: none;
+  }
 }

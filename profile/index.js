@@ -2,6 +2,7 @@ const img = {
   src: "./rg.jfif",
 };
 
+
 let div = document.querySelector("div");
 let imageContainer = document.createElement("div");
 div.appendChild(imageContainer);
@@ -9,6 +10,7 @@ let image = document.createElement("img");
 imageContainer.appendChild(image);
 image.setAttribute("src", img.src);
 imageContainer.classList.add("image-container");
+
 
 let containerRight = document.createElement("div");
 div.appendChild(containerRight);

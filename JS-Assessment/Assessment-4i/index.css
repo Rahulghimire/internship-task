@@ -6,11 +6,11 @@ body {
   justify-content: center;
   background-color: rgb(221, 241, 249);
 }
-.main {
+.box-container {
   background-color: black;
-}
-.box,
-.box1 {
   position: relative;
+}
+.box {
+  position: absolute;
   background: white;
 }

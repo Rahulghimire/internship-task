@@ -2,7 +2,6 @@ const img = {
   src: "./rg.jfif",
 };
 
-
 let div = document.querySelector("div");
 let imageContainer = document.createElement("div");
 div.appendChild(imageContainer);
@@ -11,6 +10,10 @@ imageContainer.appendChild(image);
 image.setAttribute("src", img.src);
 imageContainer.classList.add("image-container");
 
+let textRight = document.createElement("span");
+imageContainer.appendChild(textRight);
+textRight.classList.add("spant");
+textRight.append("Hello, Welcome To My Profile Page");
 
 let containerRight = document.createElement("div");
 div.appendChild(containerRight);

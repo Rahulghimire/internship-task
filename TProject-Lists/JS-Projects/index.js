@@ -1,6 +1,6 @@
 const projectJS = [
   {
-    assignnumber: "#1",
+    assignnumber: "#Profile",
     clink:
       " https://github.com/Rahulghimire/internship-task/blob/main/index.js",
     dlink: "https://rahulghimire.github.io/internship-task/",
@@ -13,11 +13,39 @@ const projectJS = [
       "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-2/index.html",
   },
   {
-    assignnumber: "#3",
+    assignnumber: "#Carousel",
     clink:
       "https://github.com/Rahulghimire/internship-task/tree/main/JS-Assessment/Assessment-3/index.js",
     dlink:
       "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-3/index.html",
+  },
+  {
+    assignnumber: "#Box Collision",
+    clink:
+      "https://github.com/Rahulghimire/internship-task/tree/main/JS-Assessment/Assessment-3/index.js",
+    dlink:
+      "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-3/index.html",
+  },
+  {
+    assignnumber: "#Ant Smasher",
+    clink:
+      "https://github.com/Rahulghimire/internship-task/tree/main/JS-Assessment/Assessment-3/index.js",
+    dlink:
+      "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-3/index.html",
+  },
+  {
+    assignnumber: "#Car Game",
+    clink:
+      "https://github.com/Rahulghimire/internship-task/tree/main/JS-Assessment/Assessment-3/index.js",
+    dlink:
+      "https://rahulghimire.github.io/internship-task/JS-Assessment/Assessment-3/index.html",
+  },
+  {
+    assignnumber: "Final Project",
+    clink:
+      "https://github.com/Rahulghimire/internship-task/tree/main/JS-Assessment/JS-Final-Project/index.js",
+    dlink:
+      "https://rahulghimire.github.io/internship-task/JS-Assessment/JS-Final-Project/index.html",
   },
 ];
 

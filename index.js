@@ -13,8 +13,8 @@ profileLink.setAttribute("href", linkProfile.profile);
 const projectLists = [
   { projectName: "FIGMA TASK", link: "./TProject-Lists/Figma-Projects/" },
   { projectName: "HTML TASK", link: "./TProject-Lists/Html-Projects/" },
-  { projectName: "CSS TASK", link: "./TProject-Lists/Css-Projects/" },
-  { projectName: "SCSS TASK", link: "./TProject-Lists/Scss-Projects/" },
+  { projectName: "CSS TASK", link: "./TProject-Lists/Css-projects/" },
+  { projectName: "SCSS TASK", link: "./TProject-Lists/Scss-projects/" },
   {
     projectName: "BOOTSTRAP",
     link: "./TProject-Lists/Bootstrap-Projects/",

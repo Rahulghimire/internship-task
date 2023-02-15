@@ -20,6 +20,7 @@ const projectLists = [
     link: "./TProject-Lists/Bootstrap-Projects/",
   },
   { projectName: "JS TASK", link: "./TProject-Lists/JS-Projects/" },
+  { projectName: "REACT TASK", link: "./TProject-Lists/ReactJS-Projects/" },
 ];
 
 let cardContainer = document.createElement("div");
